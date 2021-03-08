@@ -18,13 +18,13 @@ class TestCase(unittest.TestCase):
         result = fizzbuzz.fizzbuzz(1)
         self.assertEqual(result, 1)
 
-        result = fizzbuzz(3)
+        result = fizzbuzz.fizzbuzz(3)
         self.assertEqual(result, 'Fizz')
 
-        result = fizzbuzz(5)
+        result = fizzbuzz.fizzbuzz(5)
         self.assertEqual(result, 'Buzz')
 
-        result = fizzbuzz(15)
+        result = fizzbuzz.fizzbuzz(15)
         self.assertEqual(result, 'FizzBuzz')
         
 if __name__ == '__main__':
