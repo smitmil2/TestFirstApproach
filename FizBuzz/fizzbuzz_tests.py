@@ -1,11 +1,13 @@
 import unittest
-import FizBuzz
+import fizzbuzz
 
 class TestCase(unittest.TestCase):
     def testFizz(self):
-        result = FizBuzz.is_fizz(20)
-        self.assert(result, False)
+        result = fizzbuzz.is_fizz(20)
+        self.assertEqual(result, False)
 
-        result = FizBuzz.is_fizz(21)
-        self.assert(result, True)
-        
+        result = fizzbuzz.is_fizz(21)
+        self.assertEqual(result, True)
+
+if __name__ == '__main__':
+    unittest.main()
