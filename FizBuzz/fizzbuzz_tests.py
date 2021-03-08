@@ -4,10 +4,10 @@ import fizzbuzz
 class TestCase(unittest.TestCase):
     def testFizz(self):
         result = fizzbuzz.is_fizz(20)
-        self.assertEqual(result, False)
+        self.assertFalse(result)
 
         result = fizzbuzz.is_fizz(21)
-        self.assertEqual(result, True)
+        self.assertTrue(result)
 
 if __name__ == '__main__':
     unittest.main()
